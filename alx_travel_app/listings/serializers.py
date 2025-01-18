@@ -14,8 +14,8 @@ class ListingSerializer(serializers.ModelSerializer):
     
     def to_representation(self, instance):
         representation = super().to_representation(instance)
-        representation["host"] = instance.host
-        representation["property"] = instance.property
+        representation["host"] = instance.host.email
+        representation["property"] = instance.property_id
         return representation
 
 
@@ -29,6 +29,6 @@ class BookingSerializer(serializers.ModelSerializer):
 
     def to_representation(self, instance):
         representation = super().to_representation(instance)
-        representation["guest"] = instance.guest
-        representation["property"] = instance.property
+        representation["guest"] = instance.guest.email
+        representation["property"] = instance.property_id
         return representation
