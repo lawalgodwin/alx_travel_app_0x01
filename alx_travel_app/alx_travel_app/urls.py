@@ -24,7 +24,7 @@ import listings.urls
 
 schema_view = get_schema_view(
    openapi.Info(
-      title="ALX Traval App API",
+      title="Booking System API",
       default_version='v1',
       description="Technical documentation for the ALX Travel App API",
       terms_of_service="https://www.google.com/policies/terms/",
