@@ -26,7 +26,7 @@ schema_view = get_schema_view(
    openapi.Info(
       title="Booking System API",
       default_version='v1',
-      description="Technical documentation for the ALX Travel App API",
+      description="Technical documentation for a booking system API",
       terms_of_service="https://www.google.com/policies/terms/",
       contact=openapi.Contact(email="godwin.lawal.dev@gmail.com"),
       license=openapi.License(name="BSD License"),
