@@ -48,7 +48,7 @@ class Booking(models.Model):
         ]
 
     def __str__(self):
-        return f"Booking:: {self.property.name} | {self.start_date.strptime("%X")} - {self.end_date.strftime("%X")}"
+        return f"Booking:: {self.property.name} | {self.start_date.strftime("%X")} - {self.end_date.strftime("%X")}"
 
 
 class Review(models.Model):
